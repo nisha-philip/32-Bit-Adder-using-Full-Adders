@@ -1,7 +1,7 @@
 # 32-Bit-Adder-using-Full-Adders
 
 ## Get Started
-This project has been executed on https://www.edaplayground.com using Verilog
+This project has been executed on https://www.edaplayground.com using Verilog using a Ripple Carry Adder Approach
 
 ### Steps to follow
 1. Download the test bench file and the design file(.sv files)
