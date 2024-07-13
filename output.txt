@@ -1,0 +1,18 @@
+[2024-07-13 16:28:18 UTC] iverilog '-Wall' '-g2012' design.sv testbench.sv  && unbuffer vvp a.out  
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module FullAdder declared here: design.sv:3
+       :   -- module RippleCarryAdder32 declared here: design.sv:14
+VCD info: dumpfile dump.vcd opened for output.
+Time = 0ns, A = 00000000, B = 00000000, Cin = 0, Sum = 00000000, Cout = 0
+Time = 10ns, A = 00000001, B = 00000001, Cin = 0, Sum = 00000002, Cout = 0
+Time = 20ns, A = ffffffff, B = 00000001, Cin = 0, Sum = 00000000, Cout = 1
+Time = 30ns, A = 12345678, B = 87654321, Cin = 0, Sum = 99999999, Cout = 0
+Time = 40ns, A = aaaaaaaa, B = 55555555, Cin = 0, Sum = ffffffff, Cout = 0
+Time = 50ns, A = ffffffff, B = ffffffff, Cin = 0, Sum = fffffffe, Cout = 1
+testbench.sv:41: $finish called at 60000 (1ps)
+Finding VCD file...
+./dump.vcd
+[2024-07-13 16:28:19 UTC] Opening EPWave...
+Done
